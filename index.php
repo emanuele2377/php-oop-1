@@ -1,19 +1,21 @@
 <?php
-class Movie
-{
-    public $durata;
-    public $genere;
-    public $attori;
 
-    function __construct($durata, $genere, $attori)
-    {
-        $this->durata = $durata;
-        $this->genere = $genere;
-        $this->attori = $attori;
-    }
-}
+require __DIR__ . '/movis.php';
 
-$oppenheimer = new Movie($durata, $genere, $attori);
-$disturbia = new Movie($durata, $genere, $attori);
-$casino = new Movie($durata, $genere, $attori);
-$alien = new Movie($durata, $genere, $attori);
+
+$movs_oppenheimer = new Movie();
+
+
+$movs_oppenheimer->genere = "dramma";
+$movs_oppenheimer->durata = "3 ore";
+$movs_oppenheimer->lingua = "inglese";
+
+$movs_oppenheimer = new Movie("dramma", "3 ore", "inglese");
+
+
+$movs_disturbia = new Movie("dramma", "3 ore", "inglese");
+
+
+echo "<h2>Stampo titolo film</h2>";
+var_dump($movs_oppenheimer);
+var_dump($movs_disturbia);
