@@ -5,7 +5,7 @@ class Movie
     public $genere;
     public $attori;
 
-    function __construct($_durata, $genere, $attori)
+    function __construct($durata, $genere, $attori)
     {
         $this->durata = $durata;
         $this->genere = $genere;
@@ -13,7 +13,7 @@ class Movie
     }
 }
 
-$oppenheimer = new Movie();
-$disturbia = new Movie();
-$casino = new Movie();
-$alien = new Movie();
+$oppenheimer = new Movie($durata, $genere, $attori);
+$disturbia = new Movie($durata, $genere, $attori);
+$casino = new Movie($durata, $genere, $attori);
+$alien = new Movie($durata, $genere, $attori);
