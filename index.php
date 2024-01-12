@@ -1,13 +1,19 @@
 <?php
 class Movie
 {
+    public $durata;
+    public $genere;
+    public $attori;
 
-    function __construct($_durata)
+    function __construct($_durata, $genere, $attori)
     {
+        $this->durata = $durata;
+        $this->genere = $genere;
+        $this->attori = $attori;
     }
 }
 
-$oppenheimer = new Movie($_durata);
-$disturbia = new Movie($_durata);
-$casino = new Movie($_durata);
-$alien = new Movie($_durata);
+$oppenheimer = new Movie();
+$disturbia = new Movie();
+$casino = new Movie();
+$alien = new Movie();
